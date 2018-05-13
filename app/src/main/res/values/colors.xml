@@ -1,6 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright 2018 Race UP
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~ http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#435BAB</color>  <!-- brochure cube blue -->
+    <color name="colorPrimaryDark">#2E3636</color>  <!-- brochure cube grey -->
+    <color name="colorAccent">#B20029</color>  <!-- brochure cube red light -->
+
+    <!-- raceup brochure -->
+    <color name="raceupBrochureBackgroundGrey">#ACACAC</color>
+    <color name="raceupBrochureCubeBlack">#2E3636</color>
+    <color name="raceupBrochureCubeBlue">#435BAB</color>
+    <color name="raceupBrochureCubeGrey">#909196</color>
+    <color name="raceupBrochureCubeRedLight">#B20029</color>
+    <color name="raceupBrochureCubeRedDark">#4E071E</color>
+
+    <!-- raceup cars -->
+    <color name="raceupCarEd">#0023ff</color>
+    <color name="raceupCarEdLight">#112399</color>
+    <color name="raceupCarCd">#fb2323</color>
+    <color name="raceupCarCdLight">#bb2323</color>
+
+    <!-- unipd -->
+    <color name="unipd">#9b0014</color>
+    <color name="unipdDark">#790011</color>
+
+    <!-- misc -->
+    <color name="grey_0">#c7c7c7</color>
+    <color name="grey_3">#6D6D6D</color>
+    <color name="grey_4">#615f5f</color>
 </resources>

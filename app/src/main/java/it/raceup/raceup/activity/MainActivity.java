@@ -35,8 +35,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import it.raceup.raceapp.R;
-import it.raceup.raceapp.dialog.AboutDialog;
+import it.raceup.raceup.R;
+import it.raceup.raceup.dialog.AboutDialog;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -98,12 +98,6 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
-        } else if (id == R.id.nav_community) {
-            openCommunityActivity();
-        } else if (id == R.id.nav_profile) {
-            openProfileActivity();
-        } else if (id == R.id.nav_training) {
-            openTrainingActivity();
         } else if (id == R.id.nav_webpage) {
             openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
@@ -123,18 +117,6 @@ public class MainActivity extends AppCompatActivity
         openActivityByClass(RealTimeTelemetryActivity.class);
     }
 
-    private void openCommunityActivity() {
-        openActivityByClass(CommunityActivity.class);
-    }
-
-    private void openProfileActivity() {
-        openActivityByClass(ProfileActivity.class);
-    }
-
-    private void openTrainingActivity() {
-        openActivityByClass(TrainingActivity.class);
-    }
-
     private void openWebpage(String url) {
         Intent openActivity = new Intent(
                 "android.intent.action.VIEW",
@@ -151,7 +133,7 @@ public class MainActivity extends AppCompatActivity
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, "Hey! Have you checked out the official Race UP android app?" +
-                "Download it from here: https://github.com/raceup/raceapp/blob/master/app/build/outputs/apk/app-debug.apk?raw=true");
+                "Download it from here: https://github.com/raceup/raceup/blob/master/app/build/outputs/apk/app-debug.apk?raw=true");
         sendIntent.setType("text/plain");
         startActivity(sendIntent);
     }
