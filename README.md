@@ -1,4 +1,4 @@
-# RaceApp
+# RaceUP
 
 *Wanna build your racing car? Wanna challenge your friends? This app is for ya!*
 
@@ -10,11 +10,11 @@ Three options, sorted from easiest to hardest:
 
 0. download from the official [raceup store](https://en.aptoide.com/store/raceup)
 0. download the `.apk` [here](todo)
-0. clone [this repository](https://github.com/raceup/raceapp), compile with gradle and install it in your mobile
+0. clone [this repository](https://github.com/raceup/raceup), compile with gradle and install it in your mobile
 
 
 ## Questions and issues
-The [github issue tracker](https://github.com/raceup/raceapp/issues) is **only** for bug reports and feature requests. Anything else, such as suggestions or media inquiries should be mailed [here](mailto:info@raceup.it?subject=RACEAPP).
+The [github issue tracker](https://github.com/raceup/raceup/issues) is **only** for bug reports and feature requests. Anything else, such as suggestions or media inquiries should be mailed [here](mailto:info@raceup.it?subject=RACEUP).
 
 
 ## Contributing
