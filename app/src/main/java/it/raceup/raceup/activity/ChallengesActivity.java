@@ -21,7 +21,6 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -41,11 +40,10 @@ public class ChallengesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_challenges);
 
-        Toolbar toolbar = findViewById(R.id.toolbar);
-
         // Create the adapter that will return a fragment for each of the primary sections of the activity.
         sectionsPagerAdapter = new ChallengesPagerAdapter(getSupportFragmentManager(), getApplicationContext());
         // Set up the ViewPager with the sections adapter.
+
         mViewPager = findViewById(R.id.container);
         mViewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabLayout = findViewById(R.id.tabs);
