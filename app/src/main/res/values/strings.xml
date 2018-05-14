@@ -287,7 +287,7 @@
     <!-- titles -->
     <string name="career">Career</string>
     <string name="suggested_players">Suggested players</string>
-    <string name="recent_played">Recent players</string>
+    <string name="community_forums">Questions and answers</string>
 
     <!-- connection -->
     <string name="not_connected">Not connected</string>
