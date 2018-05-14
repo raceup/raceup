@@ -99,9 +99,9 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
         } else if (id == R.id.nav_car) {
-            // openWebpage("http://www.raceup.it");
+            openCustomizeActivity();
         } else if (id == R.id.nav_shop) {
-            // openWebpage("http://www.raceup.it");
+            openShopActivity();
         } else if (id == R.id.nav_community) {
             openCommunityActivity();
         } else if (id == R.id.nav_challenge) {
@@ -133,6 +133,14 @@ public class MainActivity extends AppCompatActivity
                 Uri.parse(url)
         );
         startActivity(openActivity);
+    }
+
+    private void openCustomizeActivity() {
+        openActivityByClass(CustomizeActivity.class);
+    }
+
+    private void openShopActivity() {
+        openActivityByClass(ShopActivity.class);
     }
 
     private void openSettingsActivity() {

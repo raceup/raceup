@@ -71,7 +71,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="it.raceup.raceup.activity.MainActivity" />
         </activity>
-        <activity android:name=".activity.ChallengesActivity"></activity>
+        <activity android:name=".activity.ChallengesActivity" />
+        <activity
+            android:name=".activity.CustomizeActivity"
+            android:label="@string/title_activity_customize"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity.ShopActivity" />
+        <activity
+            android:name=".activity.ShopDetailActivity"
+            android:label="@string/title_activity_shop_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
