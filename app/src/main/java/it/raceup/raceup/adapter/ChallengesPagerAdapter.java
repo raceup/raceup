@@ -39,9 +39,9 @@ public class ChallengesPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new ChallengesNewFragment();
-        } else {
             return new ChallengesHistoryFragment();
+        } else {
+            return new ChallengesNewFragment();
         }
     }
 

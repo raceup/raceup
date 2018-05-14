@@ -288,6 +288,7 @@
     <string name="career">Career</string>
     <string name="suggested_players">Suggested players</string>
     <string name="community_forums">Questions and answers</string>
+    <string name="challenges_history">Your recent challenges</string>
 
     <!-- connection -->
     <string name="not_connected">Not connected</string>
@@ -390,4 +391,5 @@
     <string name="elect">Electronics and controls</string>
     <string name="power">Powertrain</string>
     <string name="frame">Frame</string>
+    <string name="challenges_upcoming">Keep sharpening your skills</string>
 </resources>
