@@ -308,11 +308,15 @@
     <!-- nav bar -->
     <string name="nav_profile_title">User</string>
     <string name="nav_profile">Profile</string>
+    <string name="nav_car_title">Your car</string>
     <string name="drawer_menu_profile">Profile</string>
     <string name="title_activity_community">Community</string>
     <string name="title_activity_challenge">New challenge</string>
     <string name="title_activity_training">Training arena</string>
     <string name="action_community">Community</string>
+    <string name="action_car">Customize</string>
+    <string name="action_shop">Visit shop</string>
+    <string name="action_events">Events</string>
     <string name="action_challenge">Challenges</string>
     <string name="action_training">Training arena</string>
     <string name="nav_competitions">Competitions</string>
@@ -330,6 +334,10 @@
     <string name="action_send_email">Send email</string>
     <string name="action_call">Make call</string>
     <string name="action_remove_contact">Remove contact</string>
+
+    <!-- challenges activity -->
+    <string name="challenges_fragment_history">History</string>
+    <string name="challenges_fragment_new">Upcoming</string>
 
     <!-- search box -->
     <string name="action_voice_rec">Voice rec</string>
@@ -374,4 +382,5 @@
     <string name="title_activity_training_challenge">TrainingChallengeActivity</string>
     <string name="start_challenge_invitation">SEND CHALLENGE</string>
     <string name="start_challenge_now">CHALLENGE NOW</string>
+    <string name="nav_community_title">Community</string>
 </resources>

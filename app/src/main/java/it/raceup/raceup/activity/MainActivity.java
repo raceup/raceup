@@ -98,10 +98,20 @@ public class MainActivity extends AppCompatActivity
 
         if (id == R.id.nav_real_time) {
             openRealTimeTelemetryActivity();
-        } else if (id == R.id.nav_webpage) {
-            openWebpage("http://www.raceup.it");
+        } else if (id == R.id.nav_car) {
+            // openWebpage("http://www.raceup.it");
+        } else if (id == R.id.nav_shop) {
+            // openWebpage("http://www.raceup.it");
+        } else if (id == R.id.nav_community) {
+            // openWebpage("http://www.raceup.it");
+        } else if (id == R.id.nav_challenge) {
+            openChallengesActivity();
+        } else if (id == R.id.nav_events) {
+            // openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_manage) {
             openSettingsActivity();
+        } else if (id == R.id.nav_webpage) {
+            openWebpage("http://www.raceup.it");
         } else if (id == R.id.nav_share) {
             openShareActivity();
         } else if (id == R.id.nav_about) {
@@ -127,6 +137,10 @@ public class MainActivity extends AppCompatActivity
 
     private void openSettingsActivity() {
         openActivityByClass(SettingsActivity.class);
+    }
+
+    private void openChallengesActivity() {
+        openActivityByClass(ChallengesActivity.class);
     }
 
     private void openShareActivity() {
