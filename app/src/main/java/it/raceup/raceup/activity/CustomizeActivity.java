@@ -12,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import it.raceup.raceup.R;
 
@@ -100,10 +99,41 @@ public class CustomizeActivity extends AppCompatActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_customize, container, false);
-            TextView textView = rootView.findViewById(R.id.section_label);
-            textView.setText(getString(R.string.section_format, getArguments().getInt(ARG_SECTION_NUMBER)));
-            return rootView;
+            int page = getArguments().getInt(ARG_SECTION_NUMBER);
+            switch (page) {
+                case 1:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_1, container, false
+                    );
+                case 2:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_2, container, false
+                    );
+                case 3:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_3, container, false
+                    );
+                case 4:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_4, container, false
+                    );
+                case 5:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_5, container, false
+                    );
+                case 6:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_6, container, false
+                    );
+                case 7:
+                    return inflater.inflate(
+                            R.layout.fragment_customize_7, container, false
+                    );
+                default:
+                    return inflater.inflate(
+                            R.layout.fragment_customize, container, false
+                    );
+            }
         }
     }
 
@@ -126,7 +156,7 @@ public class CustomizeActivity extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 3;
+            return 7;
         }
     }
 }
