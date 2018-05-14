@@ -107,7 +107,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_challenge) {
             openChallengesActivity();
         } else if (id == R.id.nav_events) {
-            // openWebpage("http://www.raceup.it");
+            openEventsActivity();
         } else if (id == R.id.nav_manage) {
             openSettingsActivity();
         } else if (id == R.id.nav_webpage) {
@@ -145,6 +145,10 @@ public class MainActivity extends AppCompatActivity
 
     private void openCommunityActivity() {
         openActivityByClass(CommunityActivity.class);
+    }
+
+    private void openEventsActivity() {
+        openActivityByClass(EventsActivity.class);
     }
 
     private void openShareActivity() {

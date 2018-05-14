@@ -53,7 +53,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="it.raceup.raceup.activity.MainActivity" />
         </activity>
-
+        <activity
+            android:name=".activity.EventsActivity"
+            android:label="@string/title_activity_events"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceup.activity.MainActivity" />
+        </activity>
         <activity
             android:name=".activity.RealTimeTelemetryActivity"
             android:label="@string/telemetry_title"
