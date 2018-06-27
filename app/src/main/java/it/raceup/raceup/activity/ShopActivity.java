@@ -26,13 +26,21 @@ public class ShopActivity extends AppCompatActivity {
         card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openShopDetailActivity();
+                // todo open aero shop
+            }
+        });
+
+        card = findViewById(R.id.tyres);
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // todo open tyres shop
             }
         });
     }
 
     protected void openCheckoutActivity() {
-        Intent openActivity = new Intent(CommunityActivity.this, ForumDetailActivity.class);
+        Intent openActivity = new Intent(ShopActivity.this, CheckoutShopActivity.class);
         startActivity(openActivity);
     }
 }
