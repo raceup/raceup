@@ -84,7 +84,43 @@
         <activity
             android:name=".activity.ForumDetailActivity"
             android:label="@string/title_activity_forum_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AeroShopActivity"
+            android:label="@string/title_activity_aero_shop"
+            android:parentActivityName=".activity.ShopActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceup.activity.ShopActivity" />
+        </activity>
+        <activity
+            android:name=".activity.WheelShopActivity"
+            android:label="@string/title_activity_wheel_shop"
+            android:parentActivityName=".activity.ShopActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceup.activity.ShopActivity" />
+        </activity>
+        <activity
+            android:name=".activity.CheckoutShopActivity"
+            android:label="@string/title_activity_checkout_shop"
+            android:parentActivityName=".activity.ShopActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceup.activity.ShopActivity" />
+        </activity>
+        <activity
+            android:name=".activity.PaymentShopActivity"
+            android:label="@string/title_activity_payment_shop"
+            android:parentActivityName=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.raceup.raceup.activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
