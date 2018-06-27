@@ -33,6 +33,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import it.raceup.raceup.R;
@@ -56,6 +57,17 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        setup();
+    }
+
+    private void setup() {
+        Button button = findViewById(R.id.community_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openCommunityActivity();
+            }
+        });
     }
 
     @Override
