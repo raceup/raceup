@@ -68,6 +68,14 @@ public class MainActivity extends AppCompatActivity
                 openCommunityActivity();
             }
         });
+
+        button = findViewById(R.id.events_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openEventsActivity();
+            }
+        });
     }
 
     @Override
