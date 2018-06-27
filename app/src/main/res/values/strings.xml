@@ -400,6 +400,6 @@
     <string name="title_activity_forum_detail">Aerodynamics Q&amp;A</string>
     <string name="title_activity_aero_shop">Aerodynamics</string>
     <string name="title_activity_wheel_shop">Wheels</string>
-    <string name="title_activity_checkout_shop">CheckoutShopActivity</string>
-    <string name="title_activity_payment_shop">PaymentShopActivity</string>
+    <string name="title_activity_checkout_shop">Checkout</string>
+    <string name="title_activity_payment_shop">Complete payment</string>
 </resources>

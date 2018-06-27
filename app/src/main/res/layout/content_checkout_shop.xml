@@ -8,4 +8,23 @@
     tools:context=".activity.CheckoutShopActivity"
     tools:showIn="@layout/activity_checkout_shop">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <Button
+            android:id="@+id/pay_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:background="@color/colorAccent"
+            android:text="Proceed to payment"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

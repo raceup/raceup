@@ -177,18 +177,6 @@
             </LinearLayout>
 
         </LinearLayout>
-
-        <Button
-            android:id="@+id/checkout_button"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_gravity="center"
-            android:layout_weight="0.5"
-            android:background="@color/colorAccent"
-            android:text="Proceed to checkout"
-            android:textAlignment="center"
-            android:textColor="@android:color/white"
-            android:textStyle="bold" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

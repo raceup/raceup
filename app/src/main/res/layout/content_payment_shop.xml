@@ -11,56 +11,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Choose payment method:" />
 
-        <include layout="@layout/item_divider" />
-
-        <LinearLayout
+        <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/paypal" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/visa" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/mastercard" />
-
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/bitcoin" />
-
-        </LinearLayout>
-
-        <include layout="@layout/item_divider" />
+            android:layout_height="120dp"
+            android:src="@drawable/payments" />
 
         <TextView
             android:layout_width="match_parent"
@@ -68,7 +30,6 @@
             android:text="Add shipping details:" />
 
         <LinearLayout
-            android:id="@+id/email_login_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
@@ -135,9 +96,8 @@
             android:layout_marginTop="20dp"
             android:layout_weight="0.5"
             android:background="@color/colorAccent"
-            android:text="Purchase"
+            android:text="PURCHASE"
             android:textAlignment="center"
-            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
