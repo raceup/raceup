@@ -398,8 +398,8 @@
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="title_activity_shop_detail">ShopDetailActivity</string>
     <string name="title_activity_forum_detail">Aerodynamics Q&amp;A</string>
-    <string name="title_activity_aero_shop">AeroShopActivity</string>
-    <string name="title_activity_wheel_shop">WheelShopActivity</string>
+    <string name="title_activity_aero_shop">Aerodynamics</string>
+    <string name="title_activity_wheel_shop">Wheels</string>
     <string name="title_activity_checkout_shop">CheckoutShopActivity</string>
     <string name="title_activity_payment_shop">PaymentShopActivity</string>
 </resources>

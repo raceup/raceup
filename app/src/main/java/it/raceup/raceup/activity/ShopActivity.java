@@ -18,15 +18,12 @@ public class ShopActivity extends AppCompatActivity {
     }
 
     private void setup() {
-        setupCardListeners();
-    }
-
-    private void setupCardListeners() {
         CardView card = findViewById(R.id.aero);
         card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // todo open aero shop
+                Intent openActivity = new Intent(ShopActivity.this, AeroShopActivity.class);
+                startActivity(openActivity);
             }
         });
 
@@ -34,7 +31,8 @@ public class ShopActivity extends AppCompatActivity {
         card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // todo open tyres shop
+                Intent openActivity = new Intent(ShopActivity.this, WheelShopActivity.class);
+                startActivity(openActivity);
             }
         });
     }

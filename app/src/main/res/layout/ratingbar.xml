@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--suppress AndroidDomInspection -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="24dp">
+
+    <item
+        android:id="@+android:id/background"
+        android:drawable="@layout/ratingbar_empty" />
+
+    <item
+        android:id="@+android:id/secondaryProgress"
+        android:drawable="@layout/ratingbar_empty" />
+
+    <item
+        android:id="@+android:id/progress"
+        android:drawable="@layout/ratingbar_filled" />
+</layer-list>
