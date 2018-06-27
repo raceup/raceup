@@ -39,9 +39,9 @@ public class ChallengesPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new ChallengesHistoryFragment();
-        } else {
             return new ChallengesNewFragment();
+        } else {
+            return new ChallengesHistoryFragment();
         }
     }
 
@@ -54,9 +54,9 @@ public class ChallengesPagerAdapter extends FragmentPagerAdapter {
     public CharSequence getPageTitle(int position) {
         switch (position) {
             case 0:
-                return context.getString(R.string.challenges_fragment_history);
-            case 1:
                 return context.getString(R.string.challenges_fragment_new);
+            case 1:
+                return context.getString(R.string.challenges_fragment_history);
         }
         return null;
     }
