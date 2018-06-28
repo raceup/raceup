@@ -298,7 +298,7 @@
     <string name="good_car_status">Good</string>
     <string name="car_errors">16</string>
     <string name="logged_user">Mr. Awesome Engineer</string>
-    <string name="logged_email">awesome@raceup.it</string>
+    <string name="logged_email">awesome@engineer.it</string>
     <string name="user_org">Race UP</string>
     <string name="navbar_header_description">Navigation bar header</string>
     <string name="title_activity_profile">My personal data</string>
