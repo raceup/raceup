@@ -1,11 +1,12 @@
 package it.raceup.raceup.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 
 import it.raceup.raceup.R;
 
@@ -18,14 +19,40 @@ public class ShopDetailActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        setup();
+    }
+
+    private void setup() {
+        CardView card = findViewById(R.id.aero);
+        card.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Intent openActivity = new Intent(ShopDetailActivity.this, AeroShopActivity.class);
+                startActivity(openActivity);
             }
         });
+
+        card = findViewById(R.id.tyres);
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openActivity = new Intent(ShopDetailActivity.this, WheelShopActivity.class);
+                startActivity(openActivity);
+            }
+        });
+
+        Button button = findViewById(R.id.checkout_button);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCheckoutActivity();
+            }
+        });
+    }
+
+    protected void openCheckoutActivity() {
+        Intent openActivity = new Intent(ShopDetailActivity.this, CheckoutShopActivity.class);
+        startActivity(openActivity);
     }
 
 }

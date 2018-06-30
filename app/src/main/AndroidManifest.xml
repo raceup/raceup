@@ -15,10 +15,10 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
         <activity android:name=".activity.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -28,11 +28,13 @@
             android:theme="@style/AppTheme.NoActionBar">
 
             <!-- todo in production add comment -->
-            <!-- <intent-filter>
+            <!--
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter> -->
+            </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".activity.SettingsActivity"
@@ -119,6 +121,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="it.raceup.raceup.activity.MainActivity" />
         </activity>
+        <activity android:name=".activity.SingleProductActivity"></activity>
     </application>
 
 </manifest>
