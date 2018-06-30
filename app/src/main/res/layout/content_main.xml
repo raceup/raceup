@@ -112,24 +112,25 @@
             android:weightSum="2">
 
             <Button
+                android:id="@+id/shop_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@color/grey_4"
-                android:text="Success stories"
+                android:text="Shop"
                 android:textAlignment="center"
                 android:textColor="@android:color/white"
                 android:textStyle="bold" />
 
             <Button
-                android:id="@+id/events_button"
+                android:id="@+id/challenges_button"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@color/grey_0"
-                android:text="Events"
+                android:text="Challenges"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />

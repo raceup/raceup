@@ -27,10 +27,10 @@ import it.raceup.raceup.R;
 /**
  * Fragment in RealTimeTelemetry activity to show info about telemetry
  */
-public class ChallengesHistoryFragment extends Fragment {
+public class ChallengesLeaderboardFragment extends Fragment {
     private View mFragmentView;
 
-    public ChallengesHistoryFragment() {
+    public ChallengesLeaderboardFragment() {
         // Required empty public constructor
     }
 
@@ -40,7 +40,7 @@ public class ChallengesHistoryFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        mFragmentView = inflater.inflate(R.layout.fragment_challenges_history, container, false);
+        mFragmentView = inflater.inflate(R.layout.fragment_challenges_leaderboard, container, false);
         return mFragmentView;
     }
 }

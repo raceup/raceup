@@ -22,7 +22,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import it.raceup.raceup.R;
-import it.raceup.raceup.fragment.ChallengesHistoryFragment;
+import it.raceup.raceup.fragment.ChallengesLeaderboardFragment;
 import it.raceup.raceup.fragment.ChallengesNewFragment;
 
 /**
@@ -41,7 +41,7 @@ public class ChallengesPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new ChallengesNewFragment();
         } else {
-            return new ChallengesHistoryFragment();
+            return new ChallengesLeaderboardFragment();
         }
     }
 
@@ -56,7 +56,7 @@ public class ChallengesPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return context.getString(R.string.challenges_fragment_new);
             case 1:
-                return context.getString(R.string.challenges_fragment_history);
+                return "Leaderboard";
         }
         return null;
     }

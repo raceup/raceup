@@ -60,19 +60,19 @@ public class MainActivity extends AppCompatActivity
     }
 
     private void setup() {
-        Button button = findViewById(R.id.community_button);
+        Button button = findViewById(R.id.shop_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openCommunityActivity();
+                openShopActivity();
             }
         });
 
-        button = findViewById(R.id.events_button);
+        button = findViewById(R.id.challenges_button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openEventsActivity();
+                openChallengesActivity();
             }
         });
     }
